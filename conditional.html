@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition</title>
+</head>
+<body>
+    <form action="">
+        <label for="">age</label>
+        <input type="text" id="a">
+        <label for="">nationality</label>
+        <input type="text" id="n">
+        <button type="button" onclick="fun()">submit</button>
+    </form>
+    <p id="para"></p>
+
+
+
+<script>
+    function fun(){
+        let age= document.getElementById("a").value
+        let nat= document.getElementById("n").value
+        if(age>=18 && age<=25 && (nat=="turkish" || nat=="pakistani" )){
+            document.getElementById("para").innerHTML="eligible"
+        }
+        else{
+            document.getElementById("para").innerHTML=" not eligible"
+        }
+    }
+</script>
+    <!-- <script>
+        let age=20;
+        let nationality="pakistani";
+        if(age==20 && nationality == "pakistani"){
+document.write("eligible");
+        }
+        else{
+            document.write("not eligible");
+        }
+    </script> -->
+
+    
+</body>
+</html>

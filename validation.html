@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""></form>
+    <label for="">NAME</label>
+    <input type="text" name="" id="n">
+    <br>
+    <span id="u_name"></span>
+    <br>
+    <br>
+    <label for="">EMAIL</label>
+    <input type="text" name="" id="e">
+    <br>
+    <span id="e_email"></span>
+    <br>
+    <br>
+     <label for=""> AGE</label>
+     <input type="text" name="" id="a">
+     <br>
+     <span id="a_age"></span>
+     <br>
+     <br>
+     <button type="button" onclick="sub()">submit</button>
+     
+     
+
+    <script>
+        function sub(){
+            let n =document.getElementById("n").value;
+            let e =document.getElementById("e").value;
+            let a =document.getElementById("a").value;
+
+
+            if(n =="" && e =="" && a=="") {
+                document.getElementById("u_name").innerHTML = "please filled out this field"
+                document.getElementById("e_email").innerHTML = "please filled out this field"
+                document.getElementById("a_age").innerHTML =  "please filled out this field"
+
+            }
+            else if( e =="" && a==""){
+            document.getElementById("e_email").innerHTML = "please filled out this field"
+            document.getElementById("a_age").innerHTML =  "please filled out this field"
+            document.getElementById("u_name").innerHTML = ""
+                
+            }
+            else if( n =="" && e==""){
+            document.getElementById("e_email").innerHTML = "please filled out this field"
+            document.getElementById("a_age").innerHTML =  ""
+            document.getElementById("u_name").innerHTML = "please fiied out this field"
+            }
+            else if( n =="" && a==""){
+            document.getElementById("e_email").innerHTML = ""
+            document.getElementById("a_age").innerHTML =  "please filled out this field"
+            document.getElementById("u_name").innerHTML = "please fiied out this field"
+            }
+                
+     }
+    </script>
+
+</body>
+</html>

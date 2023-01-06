@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        .new p span{
+            color: rgb(112, 187, 25);
+            background-color: black;
+            font-weight: bold;
+        }
+        .latest p span{
+            color: rgb(7, 8, 0);
+            background-color: rgb(41, 178, 62);
+            font-weight: bold;                                                         
+        }
+       
+        /* .latest+div{
+            color: rgb(12, 12, 11);
+            background-color: rgb(187, 192, 179);
+            font-weight:bold ;
+        } */
+        .latest+div{
+            color: rgb(12, 12, 11);
+            background-color: rgb(187, 192, 179);
+            font-weight:bold ;
+        }
+        .latest:hover{
+            background-color: chartreuse;
+            animation-timeline: 10s;
+        }
+    </style>
+</head>
+<body>
+    <!--descenedent selector start-->
+    <div class="new">
+        <p><span>cssLorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsam eligendi perferendis, tempore repellat molestiae illum cupiditate velit ipsa est impedit voluptatem quasi, pariatur quia qui dolorum ipsum sit suscipit!</span></p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum dicta fugiat id enim ipsa. Voluptas placeat delectus, soluta omnis officiis eaque consequatur numquam quis fugiat eum voluptatum sit id iure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, neque. Est tempora nisi vitae, quae quos soluta facilis optio unde dignissimos, et doloribus animi! Corporis laboriosam similique iure quasi qui.</p>
+         <!--descenedent selector end-->
+    </div>
+    <!--adjacent sibling start-->
+    <div class="latest">
+        <p> <span>html ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aliquid accusantium quod sapiente? Fugit enim soluta id placeat facere asperiores minima, iusto cupiditate consequatur quaerat cum porro culpa fuga! Veritatis!</span></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, necessitatibus alias quis modi fugiat laboriosam animi excepturi quidem doloremque cum fuga recusandae nostrum quibusdam accusantium optio iste dicta vel itaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur, qui fuga soluta odio expedita quia quos placeat, voluptas modi eveniet voluptatibus voluptatum natus sapiente culpa magnam repellendus labore repellat!</p>
+    </div>
+    <!--adjacent sibling end-->
+    <div class="present">
+        <p><span>java ipsum dolor sit amet consectetur adipisicing elit. Corrupti harum suscipit, praesentium modi dignissimos at iusto tempore consequatur. Alias doloribus dolorum cum eum tempore amet fugiat praesentium illum eos ipsum!</span></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor tempore ducimus temporibus porro alias non nesciunt illo pariatur fugiat, expedita labore eos inventore vero veniam accusantium provident obcaecati repellendus possimus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate voluptatem amet odit, aspernatur magnam dicta laboriosam et velit libero! Explicabo, eum veritatis velit earum ullam praesentium deserunt nisi vitae consequatur.</p>
+    </div>
+    <div class="main">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto quis error, eius amet earum quae voluptate impedit commodi facere enim repellat hic non fuga odit, obcaecati fugiat, natus nam ducimus.</p>
+
+    </div>
+</body>
+</html>
